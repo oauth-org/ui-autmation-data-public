@@ -3,20 +3,20 @@ kind: Deployment
 metadata:
   name: manifest-nginx-git-public
   labels:
-    app: nginx
+    app: nginx-public
   namespace: default
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: nginx-public
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-public
     spec:
       containers:
-      - name: nginx
+      - name: nginx-public
         image: nginx:1.14.2
         ports:
         - containerPort: 80
