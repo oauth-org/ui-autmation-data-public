@@ -1,5 +1,5 @@
-FROM nginx:latest
+FROM nats:latest
 LABEL maintainer="test@portainer.io"
-ENV thisIsAnUpdate=image
+ENV thisIsAnOriginal=image
 STOPSIGNAL SIGTERM
 CMD ["nginx", "-g", "daemon off;"]
