@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nats:latest
 LABEL maintainer="test@portainer.io"
 ENV thisIsAnUpdate=image
 STOPSIGNAL SIGTERM
